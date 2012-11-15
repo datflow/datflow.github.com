@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <!-- Google Analytics -->
     <script type="text/javascript">
@@ -13,244 +13,122 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
     </script>
-  </head>
-    <meta charset="UTF-8">
+ 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="twitter-bootstrap-v2/assets/css/bootstrap.css">
+    <meta name="author" content="datflow inc.">
+    <title>datflow</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="twitter-bootstrap-v2/assets/css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="css/datflow_main.css">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="twitter-bootstrap-v2/assets/ico/apple-touch-icon-144-precomposed.png" sizes="144x144" rel="apple-touch-icon-precomposed">
-    <link href="twitter-bootstrap-v2/assets/ico/apple-touch-icon-114-precomposed.png" sizes="114x114" rel="apple-touch-icon-precomposed">
-    <link href="twitter-bootstrap-v2/assets/ico/apple-touch-icon-72-precomposed.png" sizes="72x72" rel="apple-touch-icon-precomposed">
-    <link href="twitter-bootstrap-v2/assets/ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed">
-
-    <title>DatFlow your data</title>
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="bootstrap/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="bootstrap/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="bootstrap/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="bootstrap/ico/apple-touch-icon-57-precomposed.png">
+  </head>
   <body>
-<div class="container"> 
-    <div class="navbar navbar-fixed-top">
+  <!--
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">DatFlow</a>
-          <div class="nav-collapse pull-right">
-            <ul class="nav">
-              <li class="active"><a href="#">Product</a></li>
-              <li><a href="#pricing">Pricing</a></li>
-              <li><a href="#documentation">Documentation</a></li>
-              <li><a href="#blog">Blog</a></li>
+          <a class="brand quadranta_bold" href="#">datflow</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav pull-right">
+              <li><a href="mailto:datflow@datflow.com"><i class="icon-envelope icon-white"></i> Email Us</a></li>
             </ul>
-          </div> <!-- nav-collapse -->
+          </div>
         </div>
+      </div>
+    </div> 
+    -->
+    
+  <div class="container">
+    <div class="row">
+      <div class="span8">
+        <h2 class="featurette-heading">datflow<br/><span class="muted">Your data, your rules!</span></h2>
+        <p class="lead">The most powerful, flexible and easy way to collect and distribute your live data.</p>
+      </div>
+
+      <div class="span4">
+        <img class="pull-left" src="img/logo.png" width="200px" />
+      </div>
+
+    </div>
+
+    <div class="row" id="features">
+       <div class="span3 divider">
+         <!--<img src="img/dorsDF.png" alt="Collect" width="40" height="40">-->
+         <span class="label label-info">Collect</span>
+         <p>Define <b>collectors</b> to get exactly the data you need. Collect from databases, social services or your own generated streams.</p>
+        </div>
+        
+        <div class="span3 divider">
+          <!-- <img src="img/dorsDF.png" alt="Operate" width="40" height="40"> -->
+          <span class="label label-success">Operate</span>
+          <p>Define your <b>operators</b> to aggregate streams, duplicate, filter while in transit. Get the result that satisfies you.</p>
+        </div>
+
+        <div class="span3 divider">
+          <!--<img src="img/dorsDF.png" alt="Distribute" width="40" height="40">-->
+          <span class="label label-warning">Distribute</span>
+          <p><b>Connect</b> to your streams and start receiving your processed data. We care that everything is performing fine.</p>
+        </div>
+        
+        <div class="span3">
+          <!--<img src="img/dorsDF.png" alt="Show" width="40" height="40" id="featureicon">-->
+          <span class="label label-important">Show</span>
+          <p>Create custom <b>dashboards</b>. Visualize your data everytime, everywhere. Use our nice looking widgets built for you!<p>
+        </div>
+    </div> <!-- <div features> -->
+
+    <!-- Begin MailChimp Signup Form -->
+    <div class="row" id="subscribe">
+      <div id="mc_embed_signup">
+        <p class="lead muted">What about being notified when we reach the open beta state?</p>
+        <form action="http://datflow.us6.list-manage.com/subscribe/post?u=1eaef21913bfee0a2cc224626&amp;id=18c70e0cd6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input type="email" value="" name="EMAIL" class="span6 input-xlarge email" id="mce-EMAIL" placeholder="email address" required>
+          <input type="submit" value="Go Ahead!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-large" style="margin-top: -7px">
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
+    </div> <!-- End row subscribe -->
+
+    <div class="row">
+      <div class="span12" id="centrywords">
+        <p>Know more details about the evolution of this project. Follow us on <b>twitter</b></p>
+        <a href="https://twitter.com/Dat_Flow" class="twitter-follow-button" data-show-count="true" data-show-screen-name="false">Follow @Dat_Flow</a>
       </div>
     </div>
-    
-    <!--   <div class="container"> -->
-      <div class="page-header">
-        <h2> Let the Data Flow to your apps</h2>
-      </div>
 
-      <div class="row">
-        <div class="span8">
-          <div class="big box">
-             <img src="images/map.png" alt="">
-          </div>
-        </div> <!-- span8 -->
+    <hr>
 
-        <div class="span4">
-          <div class="row">
-            <div class="span4">
-              <div class="box">
-                <form class="well">  
-                  <input type="text" class="input-large" placeholder="Email">  
-                  <input type="password" class="input-large" placeholder="Password">  
-                  <label class="checkbox">  
-                    <input type="checkbox"> Remember me  
-                  </label>  
-                  <button type="submit" class="btn pull-right">Sign in</button>  
-                </form>
-              </div> <!-- box -->
-            </div> <!-- inner upper span4 -->
-            <div class="span4">
-              <div class="box">
-                <form class="well"> 
-                  <input type="text" class="input-large" placehorder="Name"> 
-                  <input type="text" class="input-large" placeholder="Email">  
-                  <input type="password" class="input-large" placeholder="Password">  
-                  <button type="submit" class="btn signup-btn pull-right">Sign in</button>  
-                </form>
-              </div> <!-- box -->
-
-            </div> <!-- inner lower span4 -->
-          </div> <!-- row -->
-        </div> <!-- span4 -->
-      </div> <!-- row -->
+    <div class="last">
+      <div class="span5 muted" id="rightywords">&copy;2012 datflow &middot; All rigths reserved.</div>
+      <div class="span6 pull-right" id="leftywords"><a href="mailto:datflow@datflow.com"><i class="icon-envelope icon-white"></i> Email Us</a></div>
+    </div>
 
 
-      <div class=row> <!-- Info boxes -->
-        <div class="span4">
-          <div class="info-box" style="background-color:#c3c3e5;">
-            <h2>Easy to use</h2>
-            <p>The library and the services takes care of your data flow. Easily. No tech required.</p>
-          </div>
-        </div>
-        <div class="span5">
-          <div class="info-box" style="background-color:#8eaac1;">
-            <h2>Secure</h2>
-            <p>Secure password storage, reliable authentication methods. We care for your data.</p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="info-box" style="background-color:#f1f0ff;">
-            <h2>Reliable</h2>
-            <p>Build with the best tools and languages to make your service rock.<br/></p>
-          </div>
-        </div>
+  </div> <!-- main container -->
 
-      </div> <!-- row -->
-      <p>
-      <div class=row> <!-- Info boxes 2nd row -->
-        <div class="span5">
-          <div class="info-box" style="background-color:#D8D8D8;">
-            <h2>Your data, your rules</h2>
-            <p>Choose your data sources, define and apply your filters and get what you need.<br>Working for you.</p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="info-box" style="background-color:#f1f0ff;">
-            <h2>Fast</h2>
-            <p>Our internal routing process is under 200ms. Look at your data in near real time.</p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="info-box" style="background-color:#c3c3e5;">
-            <h2>Cool widgets</h2>
-            <p>Show your data in nice looking widgets. Use it in your dashboard or embed in your site. Works for you.</p>
-          </div>
-        </div>
-      </div> <!-- row -->
-      <p>
-      <!-- twitter -->
-      <div class="row" style="margin-top:20px;">
-          <h2 style="padding: 3px 15px;">What Twitter says...</h2>
-        <div class="span8">
-          <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
-            <script>
-            new TWTR.Widget({
-              version: 2,
-              type: 'profile',
-              rpp: 1,
-              interval: 10000,
-              width: 'auto',
-              height: 100,
-              theme: {
-                shell: {
-                  background: '#f1f0ff',
-                  color: '#333333'
-                },
-                tweets: {
-                  background: '#c3c3e5',
-                  color: '#333333',
-                  links: '#f1f0ff'
-                }
-              },
-              features: {
-                scrollbar: false,
-                loop: false,
-                live: true,
-                behavior: 'all'
-              }
-            }).render().setUser('Dat_Flow').start();
-            </script>
-        </div> <!-- span8 -->
-        </div> <!-- row -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-
-    </div> <!-- container -->
-
-      <div class="footer">
-        <div class="row">
-          <div class="container clearfix"> <!-- style="color:#ffffff"> --> 
-
-            <div class="span2">
-              <ul class="footer-list">
-                <li class="foot-header">Developers</li>
-                <li>Support</li>
-                <li>Documentation</li>
-                <li>Status</li>
-              </ul>
-            </div>
-
-            <div class="span2">
-              <ul class="footer-list">
-                <li class="foot-header">Pricing</li>
-                <li></li>
-              </ul>
-            </div>
-            
-            <div class="span2">
-              <ul class="footer-list">
-                <li class="foot-header">Info</li>
-                <li>Blog</li>
-                <li>News</li>
-              </ul>
-            </div>
-
-
-            <div class="span2">
-              <ul class="footer-list">
-                <li class="foot-header">Company</li>
-                <li><a href="about.html">About us</a></li>
-                <li>Team</li>
-                <li><a href="mailto:datflow@datflow.com">Contact us</a></li>
-              </ul>
-            </div>
-
-            <div class="span3">
-              <ul class="footer-list">
-                <li class="foot-header">Customers</li>
-                <li>Sign in</li>
-                <li>Terms and Conditions</li>
-                <li>Privacy policy</li>
-                <li>Security</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" style="margin-top: 60px; background-color: #c3c3e5;">
-          <div class="span4 offset9">
-            &copy; DatFlow 2012. All rigths reserved.
-          </div>
-        </div>
-      </div>
-    
-    <!-- Placed at the end of the document so the pages load faster -->  
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap.js"></script>
-    <script src="twitter-bootstrap-v2/assets/js/jquery.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-transition.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-alert.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-modal.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-dropdown.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-scrollspy.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-tab.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-tooltip.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-popover.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-button.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-collapse.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-carousel.js"></script>  
-    <script src="twitter-bootstrap-v2/assets/js/bootstrap-typeahead.js"></script>
   </body>
 </html>
