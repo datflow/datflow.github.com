@@ -128,12 +128,12 @@ quadranta_bold{
   font-size: 16px;
   line-height: normal;
   font-weight:700;
-  font-family: 'quadrantaregular', helvetica, serif; font-style:italic;
+  font-family: 'quadrantaregular', helvetica, serif; 
+  /*font-style:italic;*/
   margin-left:10px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-              
 }
 input:focus,
 textarea:focus {
